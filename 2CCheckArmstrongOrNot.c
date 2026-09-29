@@ -17,13 +17,10 @@ int main()
     int oriNum = number;
     int sum = 0;
     int oricount = 1;
-    int k = 1;
-    while (k != 0)
+    while (oriNum != 0)
     {
-        for (k = oriNum; k != 0; k = k / 10)
-        {
-            oricount++;
-        }
+        oriNum=oriNum/10;
+        oricount++;
     }
     --oricount;
     for (int i = 1; i <= oricount; i++)
